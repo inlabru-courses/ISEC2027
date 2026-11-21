@@ -109,7 +109,7 @@ To fit the model we first have to create two more variable, one that indexes the
 ```{r}
 grouseticks  = grouseticks %>%
   group_by(BROOD, YEAR) %>%
-  mutate(jk = cur_group_id()) %>%
+  mutate(ij = cur_group_id()) %>%
   ungroup() %>%
   mutate(ijk = seq_along(INDEX),
          YEAR = as.factor(YEAR)) 
@@ -152,7 +152,7 @@ fit = bru(cmp, lik)
 
 cmp= ~ -1 +  year(~ -1 + YEAR, model = "fixed") +
   height(cHEIGHT, model =  "linear") + 
-  brood_year(jk , model = "iid") +
+  brood_year(ij , model = "iid") +
   brood_year_chicken(ijk, model= "iid")
 
 lik = bru_obs(TICKS ~ .,

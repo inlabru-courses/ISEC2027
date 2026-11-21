@@ -1,5 +1,5 @@
 ---
-title: "INLA and Beyond: Bayesian Hierachihcal modelling with `inlabru`"
+title: "INLA and Beyond: Bayesian Hierarchical modelling with `inlabru`"
 subtitle: "9/01/2027  • Mérida, México<br>Jafet Belmont · Sara Martino · Janine Illian"
 title-block-banner: "#00000000"
 title-block-banner-color: "white"
@@ -23,6 +23,7 @@ params:
 
 
 # Welcome to the course!
+
 
 -   Welcome to the `inlabru` workshop!
 -   Over one day, we'll introduce Bayesian hierarchical modelling with `inlabru`, focusing on spatial models for ecological data.
